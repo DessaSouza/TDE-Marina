@@ -1,12 +1,11 @@
-vetor = []
+lista = []
 for i in range(10):
     valor = int(input("Digite um valor: "))
-    vetor.append(valor)
-
+    lista.append(valor)
 
 for i in range(10):
-    if vetor[i] < 0:
-        vetor[i] = 0
+    if lista[i] < 0:
+        lista[i] = 0
 
-print("Vetor após atribuir valor 0 para elementos negativos:")
-print(vetor)
+print("Lista após atribuir valor 0 para elementos negativos:")
+print(lista)
