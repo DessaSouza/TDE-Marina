@@ -1,0 +1,19 @@
+vetor1 = []
+for i in range(10):
+    valor = int(input("Digite um valor para o primeiro vetor: "))
+    vetor1.append(valor)
+    
+vetor2 = []
+for i in range(10):
+    valor = int(input("Digite um valor para o segundo vetor: "))
+    vetor2.append(valor)
+
+vetor_intercalado = []
+for i in range(10):
+    if i % 2 == 0:
+        vetor_intercalado.append(vetor1[i])
+    else:
+        vetor_intercalado.append(vetor2[i])
+
+print("Vetor intercalado:")
+print(vetor_intercalado)
