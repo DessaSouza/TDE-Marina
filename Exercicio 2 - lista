@@ -6,15 +6,8 @@ def ler_valor_inteiro():
         except ValueError:
             print("Entrada inválida. Digite um valor inteiro válido.")
 
-# Lista para armazenar os valores lidos
-valores = []
+valores = [ler_valor_inteiro() for _ in range(6)]
 
-# Loop para ler 6 valores inteiros
-for i in range(6):
-    valor = ler_valor_inteiro()
-    valores.append(valor)
-
-# Exibindo os valores lidos
 print("Valores lidos:")
 for valor in valores:
     print(valor)
