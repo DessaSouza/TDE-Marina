@@ -1,0 +1,15 @@
+vetor = []
+for i in range(8):
+    valor = int(input("Digite um valor para a posição {}: ".format(i)))
+    vetor.append(valor)
+
+x = int(input("Digite o valor de X: "))
+y = int(input("Digite o valor de Y: "))
+
+
+if x < 0 or x >= len(vetor) or y < 0 or y >= len(vetor):
+    print("Posições inválidas. Os valores de X e Y devem estar entre 0 e {}.".format(len(vetor) - 1))
+else:
+  
+    soma = vetor[x] + vetor[y]
+    print("A soma dos valores nas posições {} e {} é: {}".format(x, y, soma))
