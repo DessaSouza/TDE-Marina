@@ -1,0 +1,9 @@
+conjunto = [float(input("Digite um número real: ")) for _ in range(10)]
+quadrados = [numero ** 2 for numero in conjunto]
+
+print("Conjunto de números reais:")
+print(conjunto)
+
+print("\nConjunto dos quadrados:")
+print(quadrados)
+
