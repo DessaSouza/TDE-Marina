@@ -1,0 +1,21 @@
+# Função para ler um valor inteiro do usuário
+def ler_valor_inteiro():
+    while True:
+        try:
+            valor = int(input("Digite um valor inteiro: "))
+            return valor
+        except ValueError:
+            print("Entrada inválida. Digite um valor inteiro válido.")
+
+# Lista para armazenar os valores lidos
+valores = []
+
+# Loop para ler 6 valores inteiros
+for i in range(6):
+    valor = ler_valor_inteiro()
+    valores.append(valor)
+
+# Exibindo os valores lidos
+print("Valores lidos:")
+for valor in valores:
+    print(valor)
