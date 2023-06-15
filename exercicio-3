@@ -1,10 +1,14 @@
-# Lendo 6 valores inteiros e armazenando em um vetor
-valores = []
-for i in range(6):
-    valor = int(input("Digite um valor inteiro: "))
-    valores.append(valor)
+conjunto = []
+for i in range(10):
+    numero = float(input("Digite um número real: "))
+    conjunto.append(numero)
 
-# Exibindo os valores lidos
-print("Valores lidos:")
-for valor in valores:
-    print(valor)
+quadrados = []
+for numero in conjunto:
+    quadrado = numero ** 2
+    quadrados.append(quadrado)
+
+print("Conjunto de números reais:")
+print(conjunto)
+print("\nConjunto dos quadrados:")
+print(quadrados)
