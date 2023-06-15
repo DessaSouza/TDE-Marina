@@ -1,0 +1,10 @@
+# Lendo 6 valores inteiros e armazenando em um vetor
+valores = []
+for i in range(6):
+    valor = int(input("Digite um valor inteiro: "))
+    valores.append(valor)
+
+# Exibindo os valores lidos
+print("Valores lidos:")
+for valor in valores:
+    print(valor)
