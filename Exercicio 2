@@ -1,4 +1,3 @@
-# Função para ler um valor inteiro do usuário
 def ler_valor_inteiro():
     while True:
         try:
